@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "docdev": "vuepress dev doc",
+    "docbuild": "vuepress build doc && node page.js",
+    "cleanup": "rm -rf node_modules/gh-pages/.cache"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0",
+    "vuepress": "^0.13.1"
+  }
+}

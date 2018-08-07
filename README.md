@@ -29,6 +29,11 @@ $ vue init xiaoqiang730730/vue_apicloud my-project
 $ cd my-project
 $ npm install
 $ npm run start
+
+# 7. 打包构建
+
+$ npm run package
+
 ```
 
 # 默认vue-cli配置更改说明

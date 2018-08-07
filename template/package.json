@@ -12,7 +12,10 @@
     "lint": "eslint --ext .js,.vue src test/unit test/e2e/specs",
     "build": "node build/build.js",
     "package": "gulp package",
-    "start": "gulp dev"
+    "start": "gulp dev",
+    "wifistart": "apicloud wifiStart --port 8686",
+    "wifiupdate": "apicloud wifiSync --project ./src --updateAll false --port 8686",
+    "wifiupdateall": "apicloud wifiSync --project ./src --updateAll true --port 8686"
   },
   "dependencies": {
     "vue": "^2.5.2",
