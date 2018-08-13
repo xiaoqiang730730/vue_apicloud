@@ -1,6 +1,13 @@
 # 介绍
 使用vue和apicloud可以快速构建一个App。
 
+- [一周一App](https://xiaoqiang730730.github.io/vue_apicloud/oneweekoneapp.html)
+
+todo
+- app推送
+- app上架
+
+
 # 快速开始
 
 ```bash
