@@ -6,6 +6,7 @@
 todo
 - app推送
 - app上架
+- 自动更新(apicloud官方提供了[云修复](https://docs.apicloud.com/Dev-Guide/smartUpdate)，可以整合使用)
 
 
 # 快速开始
