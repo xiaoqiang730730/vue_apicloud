@@ -5,6 +5,7 @@ module.exports = {
     ga: 'UA-81240080-1',
     serviceWorker: false,
     markdown: {
+      html: true,
       config: md=> {
         md.use((value)=> {
           return value;
@@ -21,9 +22,9 @@ module.exports = {
           '/': [
             '',
             'oneweekoneapp',
-            'push',
             'appstore',
-            'share'
+            'share',
+            'push'
           ]
         }
     }

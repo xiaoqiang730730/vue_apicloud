@@ -1,11 +1,11 @@
 # 介绍
 使用vue和apicloud可以快速构建一个App。
 
-- [一周一App](https://xiaoqiang730730.github.io/vue_apicloud/oneweekoneapp.html)
+- [一周一App](http://xiaoqiang730730.github.io/vue_apicloud/oneweekoneapp.html)
+- [app上架](http://xiaoqiang730730.github.io/vue_apicloud/appstore.html)
 
 todo
 - app推送
-- app上架
 - 自动更新(apicloud官方提供了[云修复](https://docs.apicloud.com/Dev-Guide/smartUpdate)，可以整合使用)
 
 

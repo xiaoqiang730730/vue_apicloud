@@ -131,6 +131,7 @@ apicloud会有一个id。
 ## [apicloud-cli](https://docs.apicloud.com/Dev-Tools/apicloud-cli)
 
 在安装自定义loader之后，按照如图所示，![](./image/apicloud_4.png)
+
 这个时候就需求apicloud-cli了，2个步骤
 
 wifi开启同步
@@ -149,7 +150,7 @@ wifi服务同步所有文件
 
 在web页面写完之后，如何构建一个app呢，之前我们已经摈弃了传统的apicloud方式。
 
-vue打包之后是在dist目录下，而apicloud可以使用上传文件形式。
+vue打包之后是在dist目录下，而apicloud可以使用[上传文件](https://www.apicloud.com/code)形式。
 ![](./image/apicloud_5.png)
 
 我们可以将vue dist下的代码和config.xml一起打包成一个zip上传，这样就只要内部维护一个git了，有权限的人进行代码打包和上传。
@@ -160,3 +161,47 @@ vue打包之后是在dist目录下，而apicloud可以使用上传文件形式�
 封装了npm命令
 
 `npm run package` 用来构建包。
+
+## 云编译
+
+最后通过[云编译](https://www.apicloud.com/package), 在线打包自己需要的平台App
+
+![](./image/apicloud_7.png)
+
+## 总结
+
+[apicloud官方demo](https://github.com/apicloudcom/APICloud-App-Templates/blob/master/dianping/widget/html/login.html)
+
+```html
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+        <title>APICloud APP</title>
+        <link rel="stylesheet" type="text/css" href="../css/api.css" />
+    </head>
+
+    <body>
+        <header id="header">
+            <div class="back event-back"></div>
+            <h1>大众点评网</h1>
+            <div class="reg open-win" win="register">注册</div>
+        </header>
+    </body>
+    <script type="text/javascript" src="../script/api.js"></script>
+    <script type="text/javascript" src="../script/common.js"></script>
+    <script type="text/javascript">
+        apiready = function() {
+            fnReady();
+            fnReadyFrame();
+        };
+    </script>
+
+</html>
+```
+
+
+apicloud还没有结合现代前端工程，还是之前jQuery方式来写业务。而且官方推荐使用原生模块来搭建页面，这样性能会好点。
+
+但是对于快速迭代，国内机型性能已经有了很大提高等因素，最终选择Vue来快速构建页面，只使用了APICloud提供的端能力，能够满足我们现阶段的需求。
