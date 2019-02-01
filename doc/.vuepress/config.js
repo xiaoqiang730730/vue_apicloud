@@ -15,6 +15,7 @@ module.exports = {
     themeConfig: {
       nav: [
         { text: 'GitHub', link: 'https://github.com/xiaoqiang730730/vue_apicloud' },
+        { text: '阿里内推', link: 'http://xiaoqiang730730.github.io/neitui/' },
       ],
       editLinks: true,
       docsDir: 'doc',
