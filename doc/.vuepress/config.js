@@ -1,3 +1,5 @@
+var path = require('path');
+
 module.exports = {
     base: '/vue_apicloud/',
     title: 'vue_apicloud',
@@ -21,6 +23,7 @@ module.exports = {
         })
       }
     },
+    theme: path.resolve(__dirname, 'theme/index.js'),
     themeConfig: {
       nav: [
         { text: 'GitHub', link: 'https://github.com/xiaoqiang730730/vue_apicloud' },
