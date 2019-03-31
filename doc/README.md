@@ -5,6 +5,8 @@ lang: zh-cn
 
 # vue_apicloud 构建 文档
 
+使用vue和apicloud可以快速构建一个App
+
 # 快速开始
 
 ```bash

@@ -2,8 +2,17 @@ module.exports = {
     base: '/vue_apicloud/',
     title: 'vue_apicloud',
     description: '利用vue apicloud，快速构建一个app',
-    ga: 'UA-81240080-1',
-    serviceWorker: false,
+    plugins: [
+      require('./baidu/index'),
+      [ 
+        '@vuepress/google-analytics',
+        {
+          'ga': 'UA-81240080-1' // UA-00000000-0
+        }
+      ],
+      '@vuepress/nprogress'
+    ],
+    serviceWorker: true,
     markdown: {
       html: true,
       config: md=> {

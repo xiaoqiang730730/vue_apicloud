@@ -4,6 +4,8 @@
     "docbuild": "vuepress build doc"
   },
   "devDependencies": {
-    "vuepress": "^0.13.1"
+    "@vuepress/plugin-google-analytics": "^1.0.0-alpha.44",
+    "@vuepress/plugin-nprogress": "^1.0.0-alpha.44",
+    "vuepress": "^1.0.0-alpha.44"
   }
 }

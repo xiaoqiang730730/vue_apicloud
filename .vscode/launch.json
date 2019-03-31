@@ -8,7 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/node_modules/vuepress/bin/vuepress.js",
+            "program": "${workspaceFolder}/node_modules/.bin/vuepress",
             "args": [
                 "dev",
                 "doc"
@@ -23,7 +23,7 @@
                 "run",
                 "docdev"
             ],
-            "port": 8009
+            "port": 8002
         },
         {
             "type": "node",
